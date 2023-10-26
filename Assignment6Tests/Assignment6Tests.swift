@@ -12,6 +12,8 @@ final class Assignment6Tests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        
     }
 
     override func tearDownWithError() throws {
@@ -33,4 +35,9 @@ final class Assignment6Tests: XCTestCase {
         }
     }
 
+}
+
+// Can create a child class from Account class even if this is in a different module because Account has an open access specifier.
+class ChildAccount : Account {
+    
 }
