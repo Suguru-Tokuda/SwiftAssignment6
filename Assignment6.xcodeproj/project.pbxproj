@@ -16,6 +16,12 @@
 		BB1B89842AEAD115007DDE3D /* Assignment6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B89832AEAD115007DDE3D /* Assignment6Tests.swift */; };
 		BB1B898E2AEAD115007DDE3D /* Assignment6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B898D2AEAD115007DDE3D /* Assignment6UITests.swift */; };
 		BB1B89902AEAD115007DDE3D /* Assignment6UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B898F2AEAD115007DDE3D /* Assignment6UITestsLaunchTests.swift */; };
+		BB1B899E2AEAD15A007DDE3D /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B899D2AEAD15A007DDE3D /* Department.swift */; };
+		BB1B89A02AEAD170007DDE3D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B899F2AEAD170007DDE3D /* Account.swift */; };
+		BB1B89A22AEAD17B007DDE3D /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B89A12AEAD17B007DDE3D /* Student.swift */; };
+		BB1B89A52AEAD323007DDE3D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B89A42AEAD323007DDE3D /* NetworkError.swift */; };
+		BB1B89AA2AEAD7CF007DDE3D /* SchoolAccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B89A92AEAD7CF007DDE3D /* SchoolAccountService.swift */; };
+		BB1B89AD2AEADA00007DDE3D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1B89AC2AEADA00007DDE3D /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		BB1B89892AEAD115007DDE3D /* Assignment6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1B898D2AEAD115007DDE3D /* Assignment6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment6UITests.swift; sourceTree = "<group>"; };
 		BB1B898F2AEAD115007DDE3D /* Assignment6UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment6UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB1B899D2AEAD15A007DDE3D /* Department.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
+		BB1B899F2AEAD170007DDE3D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		BB1B89A12AEAD17B007DDE3D /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		BB1B89A42AEAD323007DDE3D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BB1B89A92AEAD7CF007DDE3D /* SchoolAccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAccountService.swift; sourceTree = "<group>"; };
+		BB1B89AC2AEADA00007DDE3D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,10 @@
 		BB1B896B2AEAD114007DDE3D /* Assignment6 */ = {
 			isa = PBXGroup;
 			children = (
+				BB1B89AB2AEAD9F6007DDE3D /* Managers */,
+				BB1B89A82AEAD7B4007DDE3D /* Services */,
+				BB1B89A32AEAD302007DDE3D /* Enums */,
+				BB1B899C2AEAD138007DDE3D /* Models */,
 				BB1B896C2AEAD114007DDE3D /* AppDelegate.swift */,
 				BB1B896E2AEAD114007DDE3D /* SceneDelegate.swift */,
 				BB1B89702AEAD114007DDE3D /* ViewController.swift */,
@@ -125,6 +141,40 @@
 				BB1B898F2AEAD115007DDE3D /* Assignment6UITestsLaunchTests.swift */,
 			);
 			path = Assignment6UITests;
+			sourceTree = "<group>";
+		};
+		BB1B899C2AEAD138007DDE3D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB1B899D2AEAD15A007DDE3D /* Department.swift */,
+				BB1B899F2AEAD170007DDE3D /* Account.swift */,
+				BB1B89A12AEAD17B007DDE3D /* Student.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB1B89A32AEAD302007DDE3D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				BB1B89A42AEAD323007DDE3D /* NetworkError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		BB1B89A82AEAD7B4007DDE3D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BB1B89A92AEAD7CF007DDE3D /* SchoolAccountService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BB1B89AB2AEAD9F6007DDE3D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BB1B89AC2AEADA00007DDE3D /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1B89AD2AEADA00007DDE3D /* NetworkManager.swift in Sources */,
 				BB1B89712AEAD114007DDE3D /* ViewController.swift in Sources */,
+				BB1B89A22AEAD17B007DDE3D /* Student.swift in Sources */,
 				BB1B896D2AEAD114007DDE3D /* AppDelegate.swift in Sources */,
+				BB1B89AA2AEAD7CF007DDE3D /* SchoolAccountService.swift in Sources */,
 				BB1B896F2AEAD114007DDE3D /* SceneDelegate.swift in Sources */,
+				BB1B89A52AEAD323007DDE3D /* NetworkError.swift in Sources */,
+				BB1B89A02AEAD170007DDE3D /* Account.swift in Sources */,
+				BB1B899E2AEAD15A007DDE3D /* Department.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
